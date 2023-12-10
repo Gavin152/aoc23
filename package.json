@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "npx tsc && node ./build/app.js",
+    "start_dev": "npx tsc -w && node ./build/app.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
