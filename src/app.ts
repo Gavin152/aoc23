@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import { join } from 'path';
-import { arch, argv } from 'process';
+import { argv } from 'process';
+
 
 function readLines(filename: string) {
   const result = fs.readFileSync(join("data", filename), 'utf-8');
@@ -8,9 +9,7 @@ function readLines(filename: string) {
   return lines;
 }
 
-const input = argv[argv.length-1];
-
-const lines = readLines(input);
+const lines = readLines(argv[argv.length-1]);
 
 const calib = lines.map(line => {
   const matcher = /\d/;
